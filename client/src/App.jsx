@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -19,7 +20,6 @@ const Placeholder = ({ title }) => (
 );
 
 const pages = [
-  ["/about", "About Us"],
   ["/academics", "Academics"],
   ["/admissions", "Admissions"],
   ["/faculty", "Faculty & Staff"],
@@ -39,6 +39,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           {pages.map(([path, title]) => (
             <Route key={path} path={path} element={<Placeholder title={title} />} />
           ))}
