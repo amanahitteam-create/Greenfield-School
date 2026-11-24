@@ -1,4 +1,4 @@
-import { Img, HeroOverlay, Strip, Split, Block, Cta } from "../components/ui";
+﻿import { Img, HeroOverlay, Strip, Split, Block, Cta } from "../components/ui";
 
 const passions = [
   { k: "science", t: "Science & Discovery", d: "Hands-on curiosity and activity." },
@@ -31,7 +31,7 @@ export default function StudentLife() {
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           {passions.map((p) => (
             <article key={p.t}>
-              <div className="aspect-[4/3] overflow-hidden rounded-lg"><Img k={p.k} alt={p.t} /></div>
+              <div className="aspect-4/3 overflow-hidden rounded-lg"><Img k={p.k} alt={p.t} /></div>
               <h3 className="mt-3 font-display text-base font-bold text-brand sm:text-lg">{p.t}</h3>
               <p className="text-xs text-slate-500 sm:text-sm">{p.d}</p>
             </article>

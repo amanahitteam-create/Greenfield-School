@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Img, HeroOverlay, Strip, Block, Cta } from "../components/ui";
 
 const mosaic1 = [
@@ -57,7 +57,7 @@ export default function Gallery() {
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           {themes.map((t) => (
             <article key={t.t}>
-              <div className="aspect-[4/3] overflow-hidden rounded-lg"><Img k={t.k} alt={t.t} /></div>
+              <div className="aspect-4/3 overflow-hidden rounded-lg"><Img k={t.k} alt={t.t} /></div>
               <h3 className="mt-3 font-display text-base font-bold text-brand sm:text-lg">{t.t}</h3>
               <p className="text-xs text-slate-500 sm:text-sm">{t.d}</p>
             </article>

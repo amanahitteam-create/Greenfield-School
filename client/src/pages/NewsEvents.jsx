@@ -1,4 +1,4 @@
-import { Img, Hero, Strip, Split, Block, Cta } from "../components/ui";
+﻿import { Img, Hero, Strip, Split, Block, Cta } from "../components/ui";
 
 const news = [
   { k: "n1", tag: "Academics / Learning", t: "Student inquiry in action", d: "Date and details to be confirmed." },
@@ -41,7 +41,7 @@ export default function NewsEvents() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {news.map((n) => (
             <article key={n.t}>
-              <div className="aspect-[4/3] overflow-hidden rounded-lg"><Img k={n.k} alt={n.t} /></div>
+              <div className="aspect-4/3 overflow-hidden rounded-lg"><Img k={n.k} alt={n.t} /></div>
               <p className="mt-3 text-[10px] font-semibold uppercase tracking-wider text-brand/70">{n.tag}</p>
               <h3 className="mt-1 font-display text-lg font-bold text-brand">{n.t}</h3>
               <p className="mt-1 text-xs text-slate-500">{n.d}</p>

@@ -1,4 +1,4 @@
-import { Wrap, Img, Eyebrow, Heading, Hero, Strip, Split, Block, Cta } from "../components/ui";
+﻿import { Wrap, Img, Eyebrow, Heading, Hero, Strip, Split, Block, Cta } from "../components/ui";
 
 const journey = [
   ["01", "Foundations", "A welcoming start to literacy, numeracy and curiosity."],
@@ -60,7 +60,7 @@ export default function Academics() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {practice.map((p) => (
             <article key={p.t}>
-              <div className="aspect-[4/3] overflow-hidden rounded-lg"><Img k={p.img} alt={p.t} /></div>
+              <div className="aspect-4/3 overflow-hidden rounded-lg"><Img k={p.img} alt={p.t} /></div>
               <h3 className="mt-3 font-display text-lg font-bold text-brand">{p.t}</h3>
               <p className="text-sm text-slate-600">{p.d}</p>
             </article>

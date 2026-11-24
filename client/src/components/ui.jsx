@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { images } from "../images";
 
 export const Wrap = ({ children, className = "" }) => (
@@ -45,7 +45,7 @@ export function Hero({ eyebrow, title, text, btn, to, image, alt, flip, dark }) 
           {btn && <Btn to={to} variant={dark ? "light" : "solid"} className="mt-7">{btn}</Btn>}
         </div>
         {image && (
-          <div className={`aspect-[4/3] overflow-hidden rounded-2xl ${flip ? "lg:order-1" : ""}`}>
+          <div className={`aspect-4/3 overflow-hidden rounded-2xl ${flip ? "lg:order-1" : ""}`}>
             <Img k={image} alt={alt} />
           </div>
         )}
@@ -60,7 +60,7 @@ export function HeroOverlay({ eyebrow, title, text, btn, to, image, alt }) {
     <section className="bg-white">
       <Wrap className="py-6 lg:py-8">
         <div className="relative overflow-hidden rounded-2xl">
-          <div className="aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"><Img k={image} alt={alt} /></div>
+          <div className="aspect-4/5 sm:aspect-16/9 lg:aspect-21/9"><Img k={image} alt={alt} /></div>
           <div className="absolute inset-x-4 bottom-4 flex flex-col justify-center rounded-xl bg-brand-dark p-6 text-white sm:inset-x-auto sm:bottom-6 sm:left-6 sm:top-6 sm:w-[46%] lg:p-10">
             <Eyebrow light>{eyebrow}</Eyebrow>
             <h1 className="font-display text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">{title}</h1>
@@ -87,7 +87,7 @@ export function Split({ image, alt, right, eyebrow, title, children, btn, to, no
   return (
     <section className={bg}>
       <Wrap className="grid items-center gap-10 py-12 lg:grid-cols-2 lg:gap-16 lg:py-20">
-        <div className={`aspect-[4/3] overflow-hidden rounded-lg ${right ? "lg:order-2" : ""}`}><Img k={image} alt={alt} /></div>
+        <div className={`aspect-4/3 overflow-hidden rounded-lg ${right ? "lg:order-2" : ""}`}><Img k={image} alt={alt} /></div>
         <div>
           <Eyebrow>{eyebrow}</Eyebrow>
           <Heading>{title}</Heading>

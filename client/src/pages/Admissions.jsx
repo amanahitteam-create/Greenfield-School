@@ -1,4 +1,4 @@
-import { Wrap, Img, Eyebrow, Heading, Hero, Strip, Split, Block, Cta } from "../components/ui";
+﻿import { Wrap, Img, Eyebrow, Heading, Hero, Strip, Split, Block, Cta } from "../components/ui";
 
 const steps = [
   ["Start a conversation", "Contact the office for current guidance."],
@@ -75,7 +75,7 @@ export default function Admissions() {
             </ul>
             <p className="mt-5 text-xs text-slate-500">Final requirements to be confirmed by the school.</p>
           </div>
-          <div className="aspect-[4/3] overflow-hidden rounded-lg"><Img k="parents" alt="Family meeting the admissions team" /></div>
+          <div className="aspect-4/3 overflow-hidden rounded-lg"><Img k="parents" alt="Family meeting the admissions team" /></div>
         </Wrap>
       </section>
 

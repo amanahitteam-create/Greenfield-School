@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Wrap, Img, Eyebrow, Heading, Btn, Split, Cta } from "../components/ui";
 
 const quick = [
@@ -35,7 +35,7 @@ export default function Home() {
               <Btn to="/academics" variant="outline">Explore academics</Btn>
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:aspect-[5/4]">
+          <div className="relative aspect-4/3 overflow-hidden rounded-2xl lg:aspect-5/4">
             <Img k="hero" alt="Students walking together on campus" />
             <p className="absolute bottom-4 left-4 max-w-[70%] rounded-md bg-brand-dark px-4 py-2.5 text-xs text-white sm:text-sm">
               A welcoming start to every school day
@@ -76,7 +76,7 @@ export default function Home() {
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {discover.map((c) => (
               <article key={c.t}>
-                <div className="aspect-[4/3] overflow-hidden rounded-lg"><Img k={c.img} alt={c.t} /></div>
+                <div className="aspect-4/3 overflow-hidden rounded-lg"><Img k={c.img} alt={c.t} /></div>
                 <h3 className="mt-3 font-display text-lg font-bold text-brand">{c.t}</h3>
                 <p className="text-sm text-slate-600">{c.d}</p>
               </article>
@@ -92,7 +92,7 @@ export default function Home() {
           <div className="mt-8 grid grid-cols-2 gap-3 lg:grid-cols-4 lg:grid-rows-2">
             <div className="col-span-2 row-span-2 aspect-square overflow-hidden rounded-lg lg:aspect-auto"><Img k="g1" alt="Students together" /></div>
             {["g2", "g3", "g4", "g5"].map((g) => (
-              <div key={g} className="aspect-[4/3] overflow-hidden rounded-lg"><Img k={g} alt="Campus moment" /></div>
+              <div key={g} className="aspect-4/3 overflow-hidden rounded-lg"><Img k={g} alt="Campus moment" /></div>
             ))}
           </div>
           <Link to="/gallery" className="mt-5 inline-block text-sm font-medium text-brand hover:underline">See the full gallery &rsaquo;</Link>
@@ -132,7 +132,7 @@ export default function Home() {
             </blockquote>
             <figcaption className="mt-4 text-sm text-slate-600">A Greenfield parent</figcaption>
           </figure>
-          <div className="mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-2xl lg:max-w-none"><Img k="portrait" alt="Greenfield community member" /></div>
+          <div className="mx-auto aspect-4/5 w-full max-w-xs overflow-hidden rounded-2xl lg:max-w-none"><Img k="portrait" alt="Greenfield community member" /></div>
         </Wrap>
       </section>
 

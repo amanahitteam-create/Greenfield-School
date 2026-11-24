@@ -1,4 +1,4 @@
-import { Img, Hero, Strip, Split, Block, Cta } from "../components/ui";
+﻿import { Img, Hero, Strip, Split, Block, Cta } from "../components/ui";
 
 const places = [
   { k: "classroom", t: "Classrooms", d: "Learning spaces for school life." },
@@ -52,7 +52,7 @@ export default function Facilities() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {places.map((p) => (
             <article key={p.t}>
-              <div className="aspect-[4/3] overflow-hidden rounded-lg"><Img k={p.k} alt={p.t} /></div>
+              <div className="aspect-4/3 overflow-hidden rounded-lg"><Img k={p.k} alt={p.t} /></div>
               <h3 className="mt-3 font-display text-lg font-bold text-brand">{p.t}</h3>
               <p className="text-sm text-slate-600">{p.d}</p>
             </article>

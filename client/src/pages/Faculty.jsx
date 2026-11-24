@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Img, Hero, Strip, Split, Block, Cta } from "../components/ui";
 
 const leaders = [
@@ -39,7 +39,7 @@ export default function Faculty() {
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
           {leaders.map((l) => (
             <article key={l.t}>
-              <div className="aspect-[4/5] overflow-hidden rounded-lg"><Img k={l.img} alt={l.t} /></div>
+              <div className="aspect-4/5 overflow-hidden rounded-lg"><Img k={l.img} alt={l.t} /></div>
               <h3 className="mt-3 font-display text-base font-bold text-brand sm:text-lg">{l.t}</h3>
               <p className="mt-1 text-xs leading-relaxed text-slate-500">{l.d}</p>
             </article>
