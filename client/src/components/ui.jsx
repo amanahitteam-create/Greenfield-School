@@ -1,12 +1,23 @@
 ﻿import { Link } from "react-router-dom";
-import { images } from "../images";
+import { images, placeholder } from "../images";
 
 export const Wrap = ({ children, className = "" }) => (
   <div className={`mx-auto max-w-7xl px-5 lg:px-8 ${className}`}>{children}</div>
 );
 
 export const Img = ({ k, alt = "", className = "" }) => (
-  <img src={images[k] || k} alt={alt} loading="lazy" className={`h-full w-full bg-slate-200 object-cover ${className}`} />
+  <img
+    src={images[k] || k}
+    alt={alt}
+    loading="lazy"
+    onError={(e) => {
+      if (!e.target.dataset.f) {
+        e.target.dataset.f = "1";
+        e.target.src = placeholder(k);
+      }
+    }}
+    className={`h-full w-full bg-slate-200 object-cover ${className}`}
+  />
 );
 
 export const Eyebrow = ({ children, light }) => (
@@ -123,4 +134,4 @@ export const Cta = ({ eyebrow = "Next step", title, btn, to }) => (
       <Btn to={to}>{btn}</Btn>
     </Wrap>
   </section>
-);
+)
