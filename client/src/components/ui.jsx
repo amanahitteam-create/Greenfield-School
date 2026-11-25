@@ -266,3 +266,33 @@ export const Cta = ({
     </Wrap>
   </section>
 );
+const more = {
+  faculty: { t: "Faculty & Staff", d: "Meet our teachers and school leadership.", to: "/faculty" },
+  gallery: { t: "Gallery", d: "Moments from classrooms, events and campus life.", to: "/gallery" },
+  facilities: { t: "Facilities", d: "Spaces that support learning every day.", to: "/facilities" },
+  testimonials: { t: "Testimonials", d: "What families say about Greenfield.", to: "/testimonials" },
+};
+
+export const Explore = ({ items, title = "Explore more of Greenfield." }) => (
+  <section className="bg-cream">
+    <Wrap className="py-12 lg:py-16">
+      <Eyebrow>Explore more</Eyebrow>
+      <Heading>{title}</Heading>
+      <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
+        {items.map((k) => (
+          <Link
+            key={k}
+            to={more[k].to}
+            className="flex items-start justify-between rounded-lg border border-slate-200 bg-white p-5 transition-colors hover:border-brand"
+          >
+            <div>
+              <h3 className="font-display text-lg font-bold text-brand">{more[k].t}</h3>
+              <p className="mt-1 text-sm text-slate-600">{more[k].d}</p>
+            </div>
+            <span aria-hidden className="text-brand">&#8599;</span>
+          </Link>
+        ))}
+      </div>
+    </Wrap>
+  </section>
+);
