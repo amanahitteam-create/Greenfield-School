@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 
 const school = [["About Us", "/about"], ["Academics", "/academics"], ["Admissions", "/admissions"], ["Faculty & Staff", "/faculty"]];
 const explore = [["Facilities", "/facilities"], ["Student Life", "/campus-life"], ["Gallery", "/gallery"], ["News & Events", "/news-events"], ["Testimonials", "/testimonials"]];
@@ -17,7 +17,7 @@ const Col = ({ title, links }) => (
 export default function Footer() {
   return (
     <footer className="bg-brand-dark text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1.2fr] lg:px-8">
+      <div className="mx-auto grid max-w-[1600px] gap-10 px-5 py-12 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1.2fr] lg:px-16">
         <div>
           <p className="font-display text-2xl font-bold">Greenfield School</p>
           <p className="mt-2 max-w-xs text-sm text-white/70">Every learner belongs. Every story matters.</p>
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-4 text-xs text-white/60 lg:px-8">
+        <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-3 px-5 py-4 text-xs text-white/60 lg:px-16">
           <span>&copy; {new Date().getFullYear()} Greenfield School. All rights reserved.</span>
           <span className="flex gap-4">
             <Link to="/contact" className="hover:text-white">Privacy</Link>

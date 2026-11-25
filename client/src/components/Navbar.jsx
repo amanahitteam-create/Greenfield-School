@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const links = [
@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-t-4 border-brand bg-white shadow-[0_1px_0_#e5e7eb]">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <div className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-4 lg:px-16">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="grid h-11 w-11 place-items-center rounded-lg bg-brand font-display text-xl font-bold text-white">G</span>
           <span>

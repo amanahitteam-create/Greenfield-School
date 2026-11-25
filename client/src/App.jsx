@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,7 +23,7 @@ function ScrollToTop() {
 }
 
 const NotFound = () => (
-  <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+  <section className="mx-auto max-w-[1600px] px-5 py-24 lg:px-16">
     <h1 className="font-display text-4xl font-bold text-brand">Page not found</h1>
     <p className="mt-3 text-slate-600">The page you are looking for does not exist.</p>
   </section>

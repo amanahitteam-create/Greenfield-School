@@ -51,7 +51,7 @@ export default function NewsEvents() {
       </Block>
 
       <section className="bg-mint">
-        <div className="mx-auto max-w-7xl px-5 py-12 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-[1600px] px-5 py-12 lg:px-16 lg:py-20">
           <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-brand/80">Calendar preview</p>
           <h2 className="font-display text-3xl font-bold text-brand sm:text-4xl">Upcoming dates at a glance.</h2>
           <ul className="mt-8 divide-y divide-brand/15 border-y border-brand/15">
